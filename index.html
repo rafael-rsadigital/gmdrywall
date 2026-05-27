@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moura Gesso | Especialista em Drywall em Ribeirão Preto</title>
+    
+    <!-- Meta Tags de SEO Principal -->
+    <meta name="description" content="A Moura Gesso é especializada em instalações de drywall, divisórias e forros de gesso sob medida. Atendemos projetos residenciais e comerciais em Ribeirão Preto, Campinas e SJC com foco em acabamento de qualidade e compromisso com o prazo.">
+    <meta name="keywords" content="Drywall em Ribeirão Preto, Especialista em Drywall Ribeirão Preto, Divisórias Drywall Ribeirão Preto, Forro de Gesso Ribeirão Preto, Isolamento Acústico Ribeirão Preto, Moura Gesso, Drywall Campinas, Drywall São José dos Campos">
+    <meta name="author" content="Moura Gesso">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gmdrywall.vercel.app">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gmdrywall.vercel.app">
+    <meta property="og:title" content="Moura Gesso | Especialista em Drywall em Ribeirão Preto">
+    <meta property="og:description" content="Instalação de drywall, divisórias e isolamento acústico para residências e empresas. Qualidade e pontualidade em Ribeirão Preto, Campinas e São José dos Campos.">
+    <meta property="og:image" content="https://gmdrywall.vercel.app/img/logotipomouragesso.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gmdrywall.vercel.app">
+    <meta property="twitter:title" content="Moura Gesso | Especialista em Drywall em Ribeirão Preto">
+    <meta property="twitter:description" content="Instalação de drywall, divisórias e isolamento acústico de qualidade para residências e comércios.">
+    <meta property="twitter:image" content="https://gmdrywall.vercel.app/img/logotipomouragesso.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logotipomouragesso.png" onerror="this.href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23111111%22/><text y=%2250%22 x=%2250%22 font-size=%2260%22 font-weight=%22bold%22 fill=%22%23D32F2F%22 font-family=%22sans-serif%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22>MG</text></svg>'">
+
+    <!-- Google Fonts: Inter para texto corrido e Montserrat para títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilização CSS3 Pura e Responsiva -->
+    <style>
+        /* Variáveis de Design do Sistema */
+        :root {
+            --brand-red: #D32F2F;
+            --brand-dark: #111111;
+            --brand-light: #FCFCFC;
+            --brand-gray: #F5F5F7;
+            --text-dark: #1F1F1F;
+            --text-muted: #555555;
+            --border-color: #E2E2E5;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1200px;
+        }
+
+        /* Reset e Configurações Globais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--brand-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Tipografia */
+        h1, h2, h3, h4, .font-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Layout e Containers */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 96px 0;
+        }
+
+        /* Estrutura de Grids */
+        .grid {
+            display: grid;
+            gap: 32px;
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .grid-split {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-split {
+                grid-template-columns: 5fr 7fr;
+            }
+        }
+
+        .grid-hero {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 1024px) {
+            .grid-hero {
+                grid-template-columns: 7fr 5fr;
+            }
+        }
+
+        /* Header e Navegação */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 100;
+            transition: var(--transition);
+            background-color: transparent;
+            border-bottom: 1px solid transparent;
+        }
+
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            border-bottom-color: var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            height: 72px;
+        }
+
+        header .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-contain: contain;
+        }
+
+        .logo-fallback {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .logo-fallback .main-title {
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--brand-dark);
+        }
+
+        .logo-fallback .main-title span {
+            color: var(--brand-red);
+        }
+
+        .logo-fallback .sub-title {
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-top: 3px;
+        }
+
+        nav.nav-desktop {
+            display: none;
+            gap: 40px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @media (min-width: 1024px) {
+            nav.nav-desktop {
+                display: flex;
+            }
+        }
+
+        nav.nav-desktop a {
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        nav.nav-desktop a:hover {
+            color: var(--brand-dark);
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--brand-red);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--brand-dark);
+        }
+
+        .btn-dark {
+            background-color: var(--brand-dark);
+            color: white;
+        }
+
+        .btn-dark:hover {
+            background-color: var(--brand-red);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border-color: var(--border-color);
+            color: var(--brand-dark);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--brand-dark);
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        .btn-sm {
+            padding: 10px 20px;
+            font-size: 10px;
+        }
+
+        .btn-nav {
+            display: none;
+        }
+
+        @media (min-width: 640px) {
+            .btn-nav {
+                display: inline-flex;
+            }
+        }
+
+        /* Menu Mobile */
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 22px;
+            height: 14px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 110;
+        }
+
+        @media (min-width: 1024px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--brand-dark);
+            transition: var(--transition);
+        }
+
+        .menu-toggle.open span:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .menu-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.open span:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+        .nav-mobile {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 320px;
+            height: 100vh;
+            background-color: white;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+            z-index: 105;
+            transition: var(--transition);
+            padding: 100px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .nav-mobile.open {
+            right: 0;
+        }
+
+        .nav-mobile a {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--brand-gray);
+            padding-bottom: 12px;
+            transition: var(--transition);
+        }
+
+        .nav-mobile a:hover {
+            color: var(--brand-red);
+        }
+
+        .nav-mobile .btn-mob {
+            margin-top: 16px;
+        }
+
+        /* Backdrop do Menu */
+        .menu-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.3);
+            z-index: 102;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .menu-backdrop.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Scrollbar Personalizado */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--brand-light);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--brand-dark);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--brand-red);
+        }
+
+        /* Grid de Linhas de Fundo - Detalhe Técnico Sutil */
+        .engineering-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-h-screen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 160px 0 96px;
+            overflow: hidden;
+        }
+
+        .hero-decor {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .hero-line-h {
+            position: absolute;
+            top: 25%;
+            left: -10%;
+            width: 120%;
+            height: 1px;
+            background-color: var(--brand-red);
+        }
+
+        .hero-line-v {
+            position: absolute;
+            left: 20%;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background-color: var(--border-color);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--brand-red);
+            margin-bottom: 24px;
+        }
+
+        .section-tag::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background-color: var(--brand-red);
+        }
+
+        .hero-title {
+            font-size: 38px;
+            font-weight: 800;
+            color: var(--brand-dark);
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 54px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 60px;
+            }
+        }
+
+        .hero-title span {
+            color: var(--brand-red);
+        }
+
+        .hero-desc {
+            font-size: 16px;
+            color: var(--text-muted);
+            max-width: 520px;
+            margin-bottom: 32px;
+        }
+
+        .hero-bullets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dark);
+        }
+
+        .bullet-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bullet-item span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--brand-red);
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (min-width: 480px) {
+            .hero-ctas {
+                flex-direction: row;
+            }
+        }
+
+        /* Card Flutuante de Informação do Hero */
+        .hero-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-card {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            width: 100%;
+            max-width: 380px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+        }
+
+        .hero-card-corner-t {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 24px;
+            height: 24px;
+            border-top: 2px solid var(--brand-red);
+            border-l: 2px solid var(--brand-red);
+        }
+
+        .hero-card-corner-b {
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            width: 24px;
+            height: 24px;
+            border-bottom: 2px solid var(--brand-red);
+            border-r: 2px solid var(--brand-red);
+        }
+
+        .card-stat {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+
+        .card-stat-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--brand-dark);
+            display: block;
+        }
+
+        .card-stat-label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            display: block;
+        }
+
+        .card-list {
+            border-top: 1px dashed var(--border-color);
+            border-bottom: 1px dashed var(--border-color);
+            padding: 24px 0;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .card-list-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .card-list-item strong {
+            color: var(--brand-dark);
+        }
+
+        .card-bar {
+            height: 4px;
+            background-color: var(--brand-gray);
+            position: relative;
+            margin-top: 6px;
+        }
+
+        .card-bar-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 90%;
+            background-color: var(--brand-red);
+        }
+
+        .card-footer {
+            background-color: var(--brand-dark);
+            color: white;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .card-footer span:nth-child(2) {
+            width: 8px;
+            height: 8px;
+            background-color: #10B981;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #10B981;
+        }
+
+        /* Sobre Nós Section */
+        .sobre {
+            background-color: white;
+            border-top: 1px solid var(--brand-gray);
+        }
+
+        .about-image-card {
+            background-color: var(--brand-gray);
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .about-image-tag {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+        }
+
+        .about-image-title {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: var(--brand-dark);
+        }
+
+        .about-image-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .about-subgrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .about-subbox {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 16px;
+        }
+
+        .about-subbox span {
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .about-subbox p {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--brand-dark);
+            margin-top: 4px;
+        }
+
+        .about-info h2 {
+            font-size: 28px;
+            color: var(--brand-dark);
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .about-info h2 {
+                font-size: 34px;
+            }
+        }
+
+        .about-info p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        @media (min-width: 640px) {
+            .about-features {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .about-feat-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feat-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(211, 47, 47, 0.08);
+            color: var(--brand-red);
+            padding: 8px;
+            flex-shrink: 0;
+        }
+
+        .feat-icon svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .feat-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--brand-dark);
+            margin-bottom: 4px;
+        }
+
+        .feat-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Serviços Section */
+        .servicos {
+            background-color: var(--brand-gray);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 64px;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+            color: var(--brand-dark);
+            margin-bottom: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .section-header h2 {
+                font-size: 34px;
+            }
+        }
+
+        .section-header p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 32px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            border-color: var(--brand-red);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        }
+
+        .service-num {
+            font-size: 11px;
+            font-family: monospace;
+            font-weight: 700;
+            color: var(--brand-red);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-title {
+            font-size: 16px;
+            color: var(--brand-dark);
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .service-card-footer {
+            border-top: 1px solid var(--brand-gray);
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--brand-dark);
+        }
+
+        .service-card-footer span:nth-child(2) {
+            transition: var(--transition);
+            color: var(--brand-red);
+            font-size: 14px;
+        }
+
+        .service-card:hover .service-card-footer span:nth-child(2) {
+            transform: translateX(4px);
+        }
+
+        /* Diferenciais Section */
+        .diferenciais {
+            background-color: white;
+        }
+
+        .diff-intro {
+            position: relative;
+        }
+
+        @media (min-width: 1024px) {
+            .diff-intro-sticky {
+                position: sticky;
+                top: 110px;
+            }
+        }
+
+        .diff-intro h2 {
+            font-size: 28px;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .diff-intro h2 {
+                font-size: 34px;
+            }
+        }
+
+        .diff-intro p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+
+        .diff-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 640px) {
+            .diff-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .diff-card {
+            border: 1px solid var(--brand-gray);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: var(--transition);
+        }
+
+        .diff-card:hover {
+            border-color: rgba(211, 47, 47, 0.2);
+            background-color: var(--brand-light);
+        }
+
+        .diff-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(211, 47, 47, 0.08);
+            color: var(--brand-red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .diff-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .diff-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--brand-dark);
+        }
+
+        .diff-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--brand-gray);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            background-color: white;
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            border-color: rgba(211, 47, 47, 0.3);
+        }
+
+        .faq-toggle {
+            width: 100%;
+            padding: 24px;
+            background: none;
+            border: none;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--brand-dark);
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .faq-toggle {
+                font-size: 14px;
+            }
+        }
+
+        .faq-icon-box {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--brand-gray);
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-content-inner {
+            padding: 0 24px 24px;
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            border-top: 1px solid var(--brand-gray);
+            padding-top: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .faq-content-inner {
+                font-size: 13px;
+            }
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-icon-box {
+            transform: rotate(45deg);
+            color: var(--brand-red);
+            background-color: rgba(211, 47, 47, 0.08);
+        }
+
+        /* CTA Final Section */
+        .cta {
+            background-color: var(--brand-dark);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-bg-decor {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.03;
+        }
+
+        .cta-circle-l {
+            position: absolute;
+            bottom: -50%;
+            left: -25%;
+            width: 700px;
+            height: 700px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        .cta-circle-r {
+            position: absolute;
+            top: -50%;
+            right: -25%;
+            width: 700px;
+            height: 700px;
+            border: 1px solid var(--brand-red);
+            border-radius: 50%;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 10;
+            max-width: 680px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .cta h2 {
+            font-size: 28px;
+            letter-spacing: -1px;
+        }
+
+        @media (min-width: 768px) {
+            .cta h2 {
+                font-size: 40px;
+            }
+        }
+
+        .cta p {
+            font-size: 13px;
+            color: #A3A3A3;
+            line-height: 1.7;
+        }
+
+        .cta .btn {
+            width: 100%;
+        }
+
+        @media (min-width: 480px) {
+            .cta .btn {
+                width: auto;
+            }
+        }
+
+        /* Contatos Rápidos */
+        .quick-contact {
+            background-color: white;
+            border-bottom: 1px solid var(--brand-gray);
+            padding: 64px 0;
+        }
+
+        .quick-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .quick-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .quick-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px;
+            border: 1px solid var(--brand-gray);
+            background-color: var(--brand-light);
+        }
+
+        .quick-box-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: rgba(211, 47, 47, 0.08);
+            color: var(--brand-red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .quick-box-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .quick-label {
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .quick-value {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--brand-dark);
+            margin-top: 4px;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .quick-value:hover {
+            color: var(--brand-red);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--brand-dark);
+            color: white;
+            font-size: 12px;
+            padding: 48px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-flex {
+                flex-direction: row;
+            }
+        }
+
+        .footer-brand {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .footer-brand {
+                text-align: left;
+            }
+        }
+
+        .footer-brand .footer-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand .footer-desc {
+            color: #A3A3A3;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+
+        .footer-brand .footer-locations {
+            font-size: 9px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-copyright {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .footer-copyright {
+                text-align: right;
+            }
+        }
+
+        .footer-copyright p:nth-child(1) {
+            color: #A3A3A3;
+            margin-bottom: 8px;
+        }
+
+        .footer-copyright p:nth-child(2) {
+            font-size: 10px;
+            color: var(--text-muted);
+        }
+
+        .rsa-link {
+            color: var(--brand-red);
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .rsa-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <!-- Esquemas JSON-LD integrados para SEO Local de SAB (Service Area Business) sem endereço físico exposto -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://gmdrywall.vercel.app/#organization",
+          "name": "Moura Gesso",
+          "url": "https://gmdrywall.vercel.app",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://gmdrywall.vercel.app/img/logotipomouragesso.png"
+          },
+          "sameAs": [
+            "https://www.instagram.com/moura_gessoeobra/"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://gmdrywall.vercel.app/#service",
+          "name": "Moura Gesso | Especialista em Drywall",
+          "image": "https://gmdrywall.vercel.app/img/logotipomouragesso.png",
+          "telephone": "+55-11-96430-5991",
+          "url": "https://gmdrywall.vercel.app",
+          "priceRange": "$$$",
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Ribeirão Preto"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Campinas"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "São José dos Campos"
+            }
+          ],
+          "knowsAbout": [
+            "Instalação de Drywall",
+            "Divisórias de Drywall",
+            "Forro de Gesso",
+            "Isolamento Acústico",
+            "Forros Modulares",
+            "Sancas de Gesso"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://gmdrywall.vercel.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qual é a durabilidade do drywall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O drywall é altamente durável e resistente quando instalado corretamente. O sistema possui ótima estabilidade, suporta bem impactos do dia a dia e permite reparos simples e rápidos se houver alguma necessidade futura."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A Moura Gesso atende residências e comércios em Ribeirão Preto?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, atendemos com a mesma dedicação e qualidade tanto reformas e projetos residenciais quanto grandes espaços comerciais e escritórios na região de Ribeirão Preto, Campinas e São José dos Campos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona o isolamento acústico nas paredes de drywall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O drywall oferece naturalmente um bom bloqueio de som. Para melhorar ainda mais o isolamento entre os cômodos, adicionamos lã de rocha ou lã de vidro dentro das paredes durante a montagem, o que reduz ruídos de forma eficiente."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual o prazo médio de instalação?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O drywall é um sistema de construção a seco muito prático e rápido de montar, gerando quase nada de entulho. Dependendo do tamanho do projeto, divisórias e forros de residências ou salas comerciais podem ser entregues em poucos dias."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "É seguro instalar TVs ou armários pesados na parede de drywall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Durante a montagem da estrutura de drywall, inserimos reforços de madeira ou metal nos pontos onde serão fixados armários ou suportes articulados de TV, garantindo segurança total."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre o forro de gesso acartonado e o gesso em placas tradicional?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O gesso acartonado (drywall) utiliza chapas de alta precisão presas em estruturas de metal. Isso evita o surgimento de trincas, amarelamento ou rachaduras com a mudança de temperatura, proporcionando um acabamento muito mais bonito e resistente."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O drywall exige manutenção especial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os cuidados são simples, iguais aos de uma parede de alvenaria convencional. Apenas pinturas normais para renovação do ambiente e, caso precise mexer em cabos ou canos, o recorte e o fechamento do drywall são feitos sem sujeira."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como posso pedir um orçamento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Basta clicar em um dos botões do site para falar diretamente conosco pelo WhatsApp. Respondemos de forma rápida com uma proposta personalizada para a sua obra."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container nav-container">
+            
+            <!-- Logotipo Moura Gesso -->
+            <a href="#" class="logo" aria-label="Ir para o início">
+                <img src="img/logotipomouragesso.png" 
+                     alt="Moura Gesso" 
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+                
+                <div id="logo-fallback" class="logo-fallback" style="display: none;">
+                    <span class="main-title">MOURA<span>GESSO</span></span>
+                    <span class="sub-title">Drywall e Acabamentos</span>
+                </div>
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav class="nav-desktop">
+                <a href="#sobre">A Empresa</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#faq">Dúvidas Frequentes</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="https://wa.me/5511964305991?text=Olá,%20vim%20pelo%20site%20da%20Moura%20Gesso%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+                   target="_blank" 
+                   rel="noopener"
+                   class="btn btn-dark btn-sm btn-nav">
+                    <span>Orçamento</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                
+                <!-- Botão Menu Mobile -->
+                <button id="menu-toggle" class="menu-toggle" aria-label="Menu principal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Lateral Mobile -->
+    <div id="menu-backdrop" class="menu-backdrop"></div>
+    <nav id="nav-mobile" class="nav-mobile">
+        <a href="#sobre" class="mob-link">A Empresa</a>
+        <a href="#servicos" class="mob-link">Serviços</a>
+        <a href="#diferenciais" class="mob-link">Diferenciais</a>
+        <a href="#faq" class="mob-link">Dúvidas Frequentes</a>
+        <a href="https://wa.me/5511964305991?text=Olá,%20vim%20pelo%20site%20da%20Moura%20Gesso%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+           target="_blank" 
+           rel="noopener" 
+           class="btn btn-primary btn-mob mob-link">
+            <span>Falar no WhatsApp</span>
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero engineering-grid">
+        <div class="hero-decor">
+            <div class="hero-line-h"></div>
+            <div class="hero-line-v"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="grid grid-hero">
+                
+                <!-- Lado Esquerdo - Informações -->
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <div class="section-tag">Qualidade e Compromisso</div>
+                    
+                    <h1 class="hero-title">
+                        Drywall em <br>
+                        <span>Ribeirão Preto</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        A <strong>Moura Gesso</strong> oferece soluções eficientes de drywall, divisórias e forros de gesso para residências e comércios com acabamento de excelência, limpeza na obra e pontualidade na entrega.
+                    </p>
+
+                    <div class="hero-bullets">
+                        <div class="bullet-item"><span></span>Projetos Residenciais</div>
+                        <div class="bullet-item"><span></span>Espaços Comerciais</div>
+                        <div class="bullet-item"><span></span>Equipe Experiente</div>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="https://wa.me/5511964305991?text=Olá,%20vim%20pelo%20site%20da%20Moura%20Gesso%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+                           target="_blank" 
+                           rel="noopener"
+                           class="btn btn-primary">
+                            <span>Solicitar Orçamento</span>
+                        </a>
+                        <a href="#servicos" class="btn btn-secondary">
+                            Conhecer Serviços
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lado Direito - Card Detalhe Técnico Decorativo -->
+                <div class="hero-card-container">
+                    <div class="hero-card">
+                        <div class="hero-card-corner-t"></div>
+                        <div class="hero-card-corner-b"></div>
+
+                        <div class="card-stat">
+                            <div>
+                                <span class="card-stat-title">Qualidade</span>
+                                <span class="card-stat-label">Acabamento Superior</span>
+                            </div>
+                        </div>
+
+                        <div class="card-list">
+                            <div>
+                                <div class="card-list-item">
+                                    <span>Isolamento Térmico e Acústico</span>
+                                    <strong>Eficiente</strong>
+                                </div>
+                                <div class="card-bar"><div class="card-bar-fill"></div></div>
+                            </div>
+                            <div class="card-list-item" style="margin-top: 8px;">
+                                <span>Alinhamento e Nivelamento</span>
+                                <strong>Preciso</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div>
+                                <p style="font-weight: 700;">Ribeirão Preto e Região</p>
+                                <p style="font-size: 9px; color: #A3A3A3; margin-top: 2px;">Atendimento ágil para a sua obra</p>
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A EMPRESA -->
+    <section id="sobre" class="sobre section-padding">
+        <div class="container">
+            <div class="grid grid-split" style="align-items: center; gap: 64px;">
+                
+                <!-- Box de Detalhes -->
+                <div class="about-image-card">
+                    <div class="about-image-tag">MOURA GESSO</div>
+                    <h3 class="about-image-title">Trabalho Dedicado</h3>
+                    <p class="about-image-desc">
+                        Nossa instalação segue padrões que prezam pelo resultado final, garantindo paredes firmes, tetos nivelados e isolamento adequado para trazer conforto ao seu ambiente.
+                    </p>
+
+                    <div class="about-subgrid">
+                        <div class="about-subbox">
+                            <span>Ribeirão Preto</span>
+                            <p>Foco Regional</p>
+                        </div>
+                        <div class="about-subbox">
+                            <span>Também Atendemos</span>
+                            <p>Campinas e SJC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informações e Texto -->
+                <div class="about-info">
+                    <div class="section-tag">Quem Somos</div>
+                    <h2>Moura Gesso: Compromisso com a sua obra</h2>
+                    
+                    <p>
+                        Com anos de experiência em drywall e acabamentos em gesso, a <strong>Moura Gesso</strong> oferece soluções modernas e duráveis para transformar ambientes. Trabalhamos com dedicação para entregar o melhor resultado para sua casa ou empresa.
+                    </p>
+                    
+                    <p>
+                        Nossa missão é unir qualidade de acabamento, materiais resistentes e pontualidade na entrega. Planejamos e executamos cada etapa com cuidado, atendendo com excelência clientes, arquitetos e construtores de Ribeirão Preto, Campinas e São José dos Campos.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feat-item">
+                            <div class="feat-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="feat-title">Materiais Selecionados</h4>
+                                <p class="feat-desc">Trabalhamos apenas com marcas renomadas no mercado de drywall.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feat-item">
+                            <div class="feat-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="feat-title">Projetos Customizados</h4>
+                                <p class="feat-desc">Desenvolvemos e instalamos divisórias e sancas sob medida para seu ambiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos section-padding">
+        <div class="container">
+            
+            <div class="section-header">
+                <div class="section-tag" style="margin-bottom: 16px;">Nossos Serviços</div>
+                <h2>Serviços Especializados de Drywall</h2>
+                <p>Confira nossa gama de soluções desenvolvidas para valorizar e organizar melhor os seus espaços.</p>
+            </div>
+
+            <div class="grid grid-3">
+                
+                <!-- Serviço 1: Divisórias de Drywall -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">01 /</span>
+                        <h3 class="service-title">Divisórias de Drywall</h3>
+                        <p class="service-desc">
+                            Divisão prática e rápida de ambientes para residências ou escritórios, com obra limpa e excelente isolamento em Ribeirão Preto.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Praticidade e Organização</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 2: Forro de Gesso Acartonado -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">02 /</span>
+                        <h3 class="service-title">Forro de Gesso Acartonado</h3>
+                        <p class="service-desc">
+                            Forro liso e moderno, ideal para embutir spots de LED, esconder fiações e dar um toque elegante ao teto.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Estética Moderna</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 3: Forro de PVC -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">03 /</span>
+                        <h3 class="service-title">Forro de PVC</h3>
+                        <p class="service-desc">
+                            Forro de fácil limpeza, resistente à umidade e altamente durável, ideal para banheiros, cozinhas e áreas de serviço.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Praticidade</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 4: Forro de Madeira -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">04 /</span>
+                        <h3 class="service-title">Forro de Madeira</h3>
+                        <p class="service-desc">
+                            Instalação elegante que traz aconchego térmico e um visual acolhedor para a sua casa ou escritório.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Conforto Térmico</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 5: Forro Modular -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">05 /</span>
+                        <h3 class="service-title">Forro Modular</h3>
+                        <p class="service-desc">
+                            Excelente para escritórios e comércios. Placas removíveis que facilitam o acesso para manutenção de ar-condicionado e cabos.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Ideal para Empresas</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 6: Molduras em Gesso -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">06 /</span>
+                        <h3 class="service-title">Molduras em Gesso</h3>
+                        <p class="service-desc">
+                            Acabamentos tradicionais e molduras sob medida para valorizar os cantos de paredes e tetos.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Detalhes Clássicos</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 7: Sancas em Geral -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">07 /</span>
+                        <h3 class="service-title">Sancas em Geral</h3>
+                        <p class="service-desc">
+                            Sancas abertas ou fechadas para projetos de iluminação indireta, criando um ambiente aconchegante na sala ou no quarto.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Iluminação Indireta</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 8: Forro Clipping -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">08 /</span>
+                        <h3 class="service-title">Forro Clipping</h3>
+                        <p class="service-desc">
+                            Sistema de encaixe seguro com estrutura oculta, proporcionando um teto visualmente limpo e moderno.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Design Limpo</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 9: Forro Clínico -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">09 /</span>
+                        <h3 class="service-title">Forro Clínico</h3>
+                        <p class="service-desc">
+                            Forro especial lavável e higiênico, recomendado para clínicas, consultórios médicos e ambientes de saúde.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Normas de Higiene</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 10: Painel Ripado de Alumínio -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">10 /</span>
+                        <h3 class="service-title">Painel Ripado de Alumínio</h3>
+                        <p class="service-desc">
+                            Opção durável e moderna para criar painéis decorativos em paredes ou tetos, resistente e de baixa manutenção.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Tendência Visual</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 11: Forro Metálico -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">11 /</span>
+                        <h3 class="service-title">Forro Metálico</h3>
+                        <p class="service-desc">
+                            Forro resistente e durável para grandes áreas comerciais, oferecendo longa vida útil e fácil manutenção.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Alta Durabilidade</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <!-- Serviço 12: Isolamento Acústico -->
+                <div class="service-card">
+                    <div>
+                        <span class="service-num">12 /</span>
+                        <h3 class="service-title">Isolamento Acústico</h3>
+                        <p class="service-desc">
+                            Aplicação de lã de rocha ou lã de vidro no interior das paredes ou forros, reduzindo ruídos entre cômodos de forma eficiente.
+                        </p>
+                    </div>
+                    <div class="service-card-footer">
+                        <span>Conforto Acústico</span>
+                        <span>→</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais" class="diferenciais section-padding">
+        <div class="container">
+            <div class="grid grid-split" style="gap: 64px;">
+                
+                <!-- Intro Lateral -->
+                <div class="diff-intro">
+                    <div class="diff-intro-sticky">
+                        <div class="section-tag">Diferenciais</div>
+                        <h2>Padrão de Execução Superior</h2>
+                        <p>Focamos nos mínimos detalhes, garantindo que sua obra tenha acabamento limpo, alinhado e resistente.</p>
+                        
+                        <a href="https://wa.me/5511964305991?text=Olá,%20vim%20pelo%20site%20da%20Moura%20Gesso%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+                           target="_blank" 
+                           rel="noopener"
+                           class="btn btn-dark">
+                            Falar com um Especialista
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Grid de Diferenciais -->
+                <div class="diff-grid">
+                    
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <h3 class="diff-title">Obras com Qualidade</h3>
+                        <p class="diff-desc">Projetos bem planejados e executados com capricho em cada detalhe.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                        </div>
+                        <h3 class="diff-title">Especialistas de Verdade</h3>
+                        <p class="diff-desc">Profissionais experientes que conhecem o material e entregam uma instalação segura.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <h3 class="diff-title">Atendimento Flexível</h3>
+                        <p class="diff-desc">Trabalhamos com flexibilidade para atender seu cronograma de reforma, seja residencial ou comercial.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                        </div>
+                        <h3 class="diff-title">Acabamento Pronto para Pintura</h3>
+                        <p class="diff-desc">Entregamos o drywall perfeitamente emassado e lixado, pronto para receber a tinta sem imperfeições.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                        </div>
+                        <h3 class="diff-title">Projetos Personalizados</h3>
+                        <p class="diff-desc">Desenvolvemos sancas, divisórias e detalhes em gesso conforme o seu gosto ou projeto do arquiteto.</p>
+                    </div>
+
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="diff-title">Compromisso com o Prazo</h3>
+                        <p class="diff-desc">Prezamos pela pontualidade. Iniciamos e finalizamos a sua obra na data combinada.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            
+            <div class="section-header">
+                <div class="section-tag" style="margin-bottom: 16px;">FAQ</div>
+                <h2>Dúvidas Frequentes</h2>
+                <p>Esclareça de forma simples e rápida as suas principais perguntas sobre drywall.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-list">
+                    
+                    <!-- Pergunta 1 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Qual é a durabilidade do drywall?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                O drywall é altamente durável e resistente quando instalado corretamente. O sistema possui ótima estabilidade, suporta bem impactos do dia a dia e permite reparos simples e rápidos se houver alguma necessidade futura.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>A Moura Gesso atende residências e comércios em Ribeirão Preto?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Sim, atendemos com a mesma dedicação e qualidade tanto reformas e projetos residenciais quanto grandes espaços comerciais e escritórios na região de Ribeirão Preto, Campinas e São José dos Campos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Como funciona o isolamento acústico nas paredes de drywall?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                O drywall oferece naturalmente um bom bloqueio de som. Para melhorar ainda mais o isolamento entre os cômodos, adicionamos lã de rocha ou lã de vidro dentro das paredes durante a montagem, o que reduz ruídos de forma eficiente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Qual o prazo médio de instalação?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                O drywall é um sistema de construção a seco muito prático e rápido de montar, gerando quase nada de entulho. Dependendo do tamanho do projeto, divisórias e forros de residências ou salas comerciais podem ser entregues em poucos dias.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>É seguro instalar TVs ou armários pesados na parede de drywall?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Sim. Durante a montagem da estrutura de drywall, inserimos reforços de madeira ou metal nos pontos onde serão fixados armários ou suportes articulados de TV, garantindo segurança total.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 6 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Qual a diferença entre o forro de gesso acartonado e o gesso em placas tradicional?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                O gesso acartonado (drywall) utiliza chapas de alta precisão presas em estruturas de metal. Isso evita o surgimento de trincas, amarelamento ou rachaduras com a mudança de temperatura, proporcionando um acabamento muito mais bonito e resistente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 7 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>O drywall exige manutenção especial?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Os cuidados são simples, iguais aos de uma parede de alvenaria convencional. Apenas pinturas normais para renovação do ambiente e, caso precise mexer em cabos ou canos, o recorte e o fechamento do drywall são feitos sem sujeira.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 8 -->
+                    <div class="faq-item">
+                        <button class="faq-toggle">
+                            <span>Como posso pedir um orçamento?</span>
+                            <div class="faq-icon-box">+</div>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-content-inner">
+                                Basta clicar em um dos botões do site para falar diretamente conosco pelo WhatsApp. Respondemos de forma rápida com uma proposta personalizada para a sua obra.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta section-padding">
+        <div class="cta-bg-decor">
+            <div class="cta-circle-l"></div>
+            <div class="cta-circle-r"></div>
+        </div>
+
+        <div class="container cta-content">
+            <span class="section-tag" style="margin-bottom: 0;">Fale Conosco</span>
+            <h2>Pronto para iniciar seu projeto?</h2>
+            <p>Fale conosco hoje mesmo pelo WhatsApp. Nossa equipe está à disposição para enviar um orçamento sob medida para o seu espaço.</p>
+            
+            <a href="https://wa.me/5511964305991?text=Olá,%20vim%20pelo%20site%20da%20Moura%20Gesso%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
+               target="_blank" 
+               rel="noopener"
+               class="btn btn-primary"
+               style="background-color: var(--brand-red);">
+                <span>Orçamento via WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTATOS RÁPIDOS / CANAIS -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-grid">
+                
+                <!-- Contato Direto -->
+                <div class="quick-box">
+                    <div class="quick-box-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    </div>
+                    <div>
+                        <span class="quick-label">WhatsApp</span>
+                        <a href="https://wa.me/5511964305991" class="quick-value">(11) 96430-5991</a>
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="quick-box">
+                    <div class="quick-box-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    </div>
+                    <div>
+                        <span class="quick-label">Instagram</span>
+                        <a href="https://www.instagram.com/moura_gessoeobra/" target="_blank" rel="noopener" class="quick-value">@moura_gessoeobra</a>
+                    </div>
+                </div>
+
+                <!-- Google Avaliações -->
+                <div class="quick-box">
+                    <div class="quick-box-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                    </div>
+                    <div>
+                        <span class="quick-label">Avaliações</span>
+                        <a href="https://g.page/r/CSjPYR-JJa8qEBM/review" target="_blank" rel="noopener" class="quick-value">Opinião dos Clientes</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container footer-flex">
+            
+            <div class="footer-brand">
+                <p class="footer-title">Moura Gesso</p>
+                <p class="footer-desc">Especialistas em Drywall e Forros.</p>
+                <p class="footer-locations">Ribeirão Preto • Campinas • São José dos Campos</p>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 Moura Gesso. Todos os direitos reservados.</p>
+                <p>
+                    Desenvolvido por 
+                    <a href="https://wa.me/5512988052097?text=Olá%20RSA%20Digital,%20vim%20pelo%20site%20da%20Moura%20Gesso" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="rsa-link">
+                        RSA Digital
+                    </a> 
+                    | Expert em Google Meu Negócio
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS PARA COMPORTAMENTO DE ALTA USABILIDADE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Controle dinâmico do comportamento de scroll do header
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Controle do menu mobile lateral
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMobile = document.getElementById('nav-mobile');
+            const menuBackdrop = document.getElementById('menu-backdrop');
+
+            function toggleMenu() {
+                menuToggle.classList.toggle('open');
+                navMobile.classList.toggle('open');
+                menuBackdrop.classList.toggle('open');
+            }
+
+            menuToggle.addEventListener('click', toggleMenu);
+            menuBackdrop.addEventListener('click', toggleMenu);
+
+            // Fecha menu mobile ao clicar nos links internos
+            const mobileLinks = document.querySelectorAll('.mob-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('open');
+                    navMobile.classList.remove('open');
+                    menuBackdrop.classList.remove('open');
+                });
+            });
+
+            // Controle do Acordeão do FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const toggle = item.querySelector('.faq-toggle');
+                toggle.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Fecha todos os itens ativos para manter limpo
+                    faqItems.forEach(innerItem => {
+                        innerItem.classList.remove('active');
+                    });
+
+                    // Abre o item selecionado se não estiver ativo
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
