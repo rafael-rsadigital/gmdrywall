@@ -145,7 +145,9 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 80px;
+            height: 96px; /* Altura aumentada para comportar o logo maior */
+            display: flex;
+            align-items: center;
             z-index: 100;
             transition: var(--transition);
             background-color: transparent;
@@ -157,7 +159,7 @@
             backdrop-filter: blur(8px);
             border-bottom-color: var(--border-color);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-            height: 72px;
+            height: 84px; /* Altura ajustada ao scroll */
         }
 
         header .nav-container {
@@ -174,9 +176,10 @@
         }
 
         .logo img {
-            height: 40px;
+            height: 60px; /* Aumentado em 150% (era 40px) */
             width: auto;
-            object-contain: contain;
+            object-fit: contain; /* Correção para preenchimento correto */
+            mix-blend-mode: multiply; /* Faz o fundo branco da imagem ficar transparente */
         }
 
         .logo-fallback {
@@ -207,7 +210,7 @@
 
         nav.nav-desktop {
             display: none;
-            gap: 40px;
+            gap: 32px;
             font-size: 11px;
             font-weight: 600;
             text-transform: uppercase;
@@ -415,7 +418,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 160px 0 96px;
+            padding: 180px 0 96px; /* Ajuste no padding para nova altura do header */
             overflow: hidden;
         }
 
@@ -887,7 +890,7 @@
         @media (min-width: 1024px) {
             .diff-intro-sticky {
                 position: sticky;
-                top: 110px;
+                top: 120px;
             }
         }
 
@@ -1344,7 +1347,7 @@
               "name": "Qual é a durabilidade do drywall?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "O drywall é altamente durável e resistente quando instalado corretamente. O sistema possui ótima estabilidade, suporta bem impactos do dia a dia e permite reparos simples e rápidos se houver alguma necessidade futura."
+                "text": "O drywall é altamente durável e resistente quando instalado corretamente. O sistema possui ótima stabile, suporta bem impactos do dia a dia e permite reparos simples e rápidos se houver alguma necessidade futura."
               }
             },
             {
@@ -1433,6 +1436,7 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#diferenciais">Diferenciais</a>
                 <a href="#faq">Dúvidas Frequentes</a>
+                <a href="https://www.instagram.com/moura_gessoeobra/" target="_blank" rel="noopener">Instagram</a>
             </nav>
 
             <!-- CTA Header -->
@@ -1462,6 +1466,7 @@
         <a href="#servicos" class="mob-link">Serviços</a>
         <a href="#diferenciais" class="mob-link">Diferenciais</a>
         <a href="#faq" class="mob-link">Dúvidas Frequentes</a>
+        <a href="https://www.instagram.com/moura_gessoeobra/" target="_blank" rel="noopener" class="mob-link">Instagram</a>
         <a href="https://wa.me/5511964305991?text=Olá,%20vim%20pelo%20site%20da%20Moura%20Gesso%20e%20gostaria%20de%20solicitar%20um%20orçamento." 
            target="_blank" 
            rel="noopener" 
@@ -1506,8 +1511,13 @@
                            class="btn btn-primary">
                             <span>Solicitar Orçamento</span>
                         </a>
-                        <a href="#servicos" class="btn btn-secondary">
-                            Conhecer Serviços
+                        <a href="https://www.instagram.com/moura_gessoeobra/" 
+                           target="_blank" 
+                           rel="noopener"
+                           class="btn btn-secondary"
+                           style="display: inline-flex; align-items: center; gap: 8px;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <span>Siga-nos no Instagram</span>
                         </a>
                     </div>
                 </div>
@@ -2057,9 +2067,10 @@
                     <div class="quick-box-icon">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                     </div>
-                    <div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-start;">
                         <span class="quick-label">Instagram</span>
                         <a href="https://www.instagram.com/moura_gessoeobra/" target="_blank" rel="noopener" class="quick-value">@moura_gessoeobra</a>
+                        <a href="https://www.instagram.com/moura_gessoeobra/" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="margin-top: 8px; padding: 6px 12px; font-size: 9px; border-radius: 0;">Siga-nos</a>
                     </div>
                 </div>
 
